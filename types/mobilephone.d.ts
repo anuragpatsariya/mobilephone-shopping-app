@@ -1,4 +1,5 @@
 export interface MobilePhone {
+    serial_number: string;
     brand: string;
     model: string;
     price: number;
