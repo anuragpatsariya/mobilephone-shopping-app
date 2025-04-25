@@ -1,5 +1,6 @@
 // components/MobilePhoneList.tsx
 import { useEffect, useState } from 'react';
+import '../styles/module.css';
 
 type MobilePhone = {
   id: number;
@@ -24,8 +25,10 @@ const MobilePhoneList = () => {
   return (
     <div>
       <h1>Mobile Phones</h1>
+      <div className="phone-grid">
       {phones.map((phone) => (
-        <div key={phone.id} style={{ marginBottom: '1rem' }}>
+        //<div key={phone.id} style={{ marginBottom: '1rem', border: '2px solid white', padding: '1rem' }}>
+        <div key={phone.id} className="borderBox">
           <h2>{phone.brand} {phone.model}</h2>
           <p>Price: ${phone.price}</p>
           <p>RAM: {phone.ram} GB</p>
@@ -34,6 +37,7 @@ const MobilePhoneList = () => {
           <p>Screen Size: {phone.screen_size}"</p>
         </div>
       ))}
+      </div>
     </div>
   );
 };
