@@ -9,6 +9,7 @@ const MobilePhoneItem: React.FC<MobilePhoneProps> = ({ mobilephone }) => {
     return(
         <div>
             <h1>Mobile Phone Item here.</h1>
+            <img src={mobilephone.image} alt={`${mobilephone.brand} ${mobilephone.model}`} className="phone-img" />
             <h2>{mobilephone.serial_number}</h2>
             <h2>{mobilephone.brand}</h2>
             <h2>{mobilephone.model}</h2>

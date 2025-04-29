@@ -29,6 +29,7 @@ const MobilePhoneList = () => {
       {phones.map((phone) => (
         //<div key={phone.id} style={{ marginBottom: '1rem', border: '2px solid white', padding: '1rem' }}>
         <div key={phone.id} className="borderBox">
+          <img src={phone.image} alt={`${phone.brand} ${phone.model}`} className="phone-img" />
           <h2>{phone.brand} {phone.model}</h2>
           <p>Price: ${phone.price}</p>
           <p>RAM: {phone.ram} GB</p>

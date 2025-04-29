@@ -16,4 +16,5 @@ model MobilePhone {
   storage     Int
   processor   String
   screen_size Float
+  image       String?
 }

@@ -7,4 +7,5 @@ export interface MobilePhone {
     storage: number;
     processor: string;
     screen_size: number;
+    image: string;
 }
