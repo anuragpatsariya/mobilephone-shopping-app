@@ -11,6 +11,7 @@ type MobilePhone = {
   storage: number;
   processor: string;
   screen_size: number;
+  image: string;
 };
 
 const MobilePhoneList = () => {
@@ -35,7 +36,7 @@ const MobilePhoneList = () => {
           <p>RAM: {phone.ram} GB</p>
           <p>Storage: {phone.storage} GB</p>
           <p>Processor: {phone.processor}</p>
-          <p>Screen Size: {phone.screen_size}"</p>
+          <p>Screen Size: {phone.screen_size}&quot;</p>
         </div>
       ))}
       </div>
